@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Dulce Bocado</title>
+</head>
+
+<body>
+    <hearder class="container">
+        <!--Navegacion-->
+        <div class="nav-main">
+            <!--Marca-Logo             <img src="img/alfajor.jpg" alt="logo" class="nav-brand">-->
+            <a class="nav-brand" href="index.html">
+                <h1>Dulce Bocado</h1>
+            </a>
+
+            </a>
+            <!--Left Nav-->
+            <div id="app"></div>
+            <!-- <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="#">Icono de buscar</i>
+          </a>
+        </li>
+      </ul> -->
+        </div>
+    </hearder>
+
+    <h1>Formulario de Contacto</h1>
+    <div class="grid-container">
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+
+            </div>
+            <div class="form-group"> 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="map-container">
+            <p> Balcarce 50 Ciudad Autonoma de Bs. As.</p>
+            <iframe
+                
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8403576244395!2d-58.37288132477128!3d-34.60819815773396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352c95f0d4f5%3A0xee8dc0a5eb259e82!2sBalcarce%2050%2C%20C1064%20CABA!5e0!3m2!1ses-419!2sar!4v1684712740000!5m2!1ses-419!2sar"
+                width="510" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Chile 200 Bahía Blanca, Buenos Aires</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.325195501681!2d-62.26527452242958!3d-38.7103422233915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda3549182c9fb%3A0x9101735eddde0bd8!2s12%20de%20Octubre%20200%2C%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1684722723805!5m2!1ses-419!2sar"
+                width="510" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+    <script src="js/js.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+
+</html>

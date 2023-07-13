@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mantenimiento</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="js/menu.js"></script>
+  <script src="js/busqueda.js"></script>
+  <script src="js/modificar.js"></script>
+</head>
+
+
+
+
+
+
+
+  <hearder class="owner-header">
+
+  
+      <a class="nuevo-btn" href="index.html" >exit</a>
+        
+    
+   
+   
+
+    <h1>Control de Stock</h1>
+    <div class="header-content">
+      <div class="button-row">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown()">Campos</button>
+          <div id="dropdown-content" class="dropdown-content">
+            <!-- La lista de opciones se generará dinámicamente aquí -->
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="text" id="selected-option" readonly>
+          <input type="text" id="input-field" placeholder="Ingrese algo">
+          <button class="buscar-btn" onclick="buscar()">Buscar</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="buttons-container">
+      <div class="button-row">
+        <button class="nuevo-btn" onclick="abrirFormularioNuevo()">Nuevo</button>
+        <button class="modificar-btn" onclick="abrirFormulario()">Modificar</button>
+        <button class="borrar-btn" onclick="borrar()">Borrar</button>
+      </div>
+    </div>
+
+  
+  </hearder>
+
+
+
+  <section class="owner">
+    <table id="table" class="table table-striped">
+      <thead>
+        <tr id="table-headers">
+          <!-- Los encabezados de la tabla se generarán dinámicamente aquí -->
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Los registros de la tabla se generarán dinámicamente aquí -->
+      </tbody>
+    </table>
+    <div id="formulario" style="display: none;">
+      <div id="owner">
+        <!-- <h2>Modificar Artículo</h2> -->
+        <h2 id="title">...</h2>
+        <table>
+          <tbody id="form-fields">
+            <!-- Los campos del formulario se generarán dinámicamente aquí -->
+          </tbody>
+        </table>
+        <div class="buttons-container">
+          <div class="button-row">
+            <button id="btn-aceptar" class="aceptar-btn">Aceptar</button>
+            <button class="cancelar-btn" onclick="cancelar()">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  
+
+  <script src="js/busqueda.js"></script>
+  <script src="js/borrar.js"></script>
+  <script src="js/modificar.js"></script>
+  <script src="js/nuevo.js"></script>
+  <script src="js/busqueda_parcial.js"></script>
+  <script src="js/cancelar.js"></script>
+</body>
+
+</html>
