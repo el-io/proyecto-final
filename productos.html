@@ -7,9 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/estilos.css">
-   <!-- Vue -->
-   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <title>Dulce Bocado</title>
+  <style>
+    .productos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #productos-lista {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    #productos-lista div {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    #productos-lista img {
+      width: 100%;
+      height: auto;
+    }
+
+    .alf {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,7 +47,9 @@
     <!--Navegacion-->
     <div class="nav-main">
       <!--Marca-Logo-->
-      <a class="nav-brand" href="index.html"><h1>Dulce Bocado</h1></a>
+      <a class="nav-brand" href="index.html">
+        <h1>Dulce Bocado</h1>
+      </a>
       <!--Left Nav-->
       <div id="app"></div>
 
@@ -32,15 +64,17 @@
   </hearder>
 
 
-  
+
 
   <section class="productos">
     <h1>Nuestros Productos</h1>
     <div id="productos-lista">
       <div v-for="producto in productos" :key="producto.id">
+
         <img :src="producto.imagen" :alt="producto.nombre">
         <h3>{{ producto.nombre }}</h3>
         <p>{{ producto.descripcion }}</p>
+
       </div>
     </div>
   </section>
